@@ -1,0 +1,15 @@
+[2016-11-03 10:36:59] /shop/index.php?act=search&op=index&cate_id=223&area_id=30 ( act=search&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT brand_id FROM `ngmapco2_b2b2c`.`shopnc_type_brand` WHERE ( type_id = '0' ) LIMIT 1000  
+[2016-11-03 10:37:07] /shop/index.php?act=search&op=index&cate_id=223&area_id=30 ( act=search&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT attr_id,attr_name FROM `ngmapco2_b2b2c`.`shopnc_attribute` WHERE ( type_id = '0' ) AND ( attr_show = '1' ) ORDER BY attr_sort asc LIMIT 1000  
+[2016-11-03 10:37:08] /shop/index.php?act=search&op=index&cate_id=223&area_id=30 ( act=search&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT attr_value_id,attr_value_name,attr_id FROM `ngmapco2_b2b2c`.`shopnc_attribute_value` WHERE ( type_id = '0' ) ORDER BY attr_value_sort asc,attr_value_id asc LIMIT 1000  
+[2016-11-03 10:37:08] /shop/index.php?act=search&op=index&cate_id=223&area_id=30 ( act=search&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT count(distinct CONCAT(goods_commonid,',',color_id)) AS nc_count FROM `ngmapco2_b2b2c`.`shopnc_goods` WHERE ( gc_id IN ('223') ) AND ( areaid_1 = '30' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2016-11-03 10:38:08] /shop/index.php?act=brand&op=list&brand=100&area_id=26&key=3&order=2 ( act=brand&op=list ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `ngmapco2_b2b2c`.`shopnc_brand` WHERE brand_id='100'
