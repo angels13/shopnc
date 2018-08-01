@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>填写核对购物信息</title>
+</head>
+<body>
+    <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发票列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/child.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="buy_step1">
+       <div class="buys1-cnt">
+           <h3 class="clearfix">收货人信息 <span class="btn-s btn-prink-s fright buys1-edit-address">修改</span></h3>
+           <ul class="buys-ycnt buys1-hide-detail">
+                <li class="clearfix">
+                    <span class="key fleft">姓名：</span>
+                    <div class="value fleft">
+                        菜菜
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <span class="key fleft">详细地址：</span>
+                    <div class="value fleft">
+                        天津  天津市 河西区 天津市红桥区
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <span class="key fleft">联系电话：</span>
+                    <div class="value fleft">
+                       12345678915
+                    </div>
+                </li>
+           </ul>
+           <ul class="buys1-hide-list buys-ycnt hide">
+                <li class="current">
+                    <label>
+                        <input type="radio" name="address" checked="checked" class="rdo"/>
+                        <span class="mr5 rdo-span">菜菜 天津    天津市 和平区 和平区滨江道300号858商场1楼(近南京路) 12345679878</span>
+                    </label>
+                    <a class="del-address" href="javascript:void(0);">[删除]</a>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="address" class="rdo"/>
+                        <span class="mr5 rdo-span">菜菜 天津    天津市 和平区 和平区滨江道300号858商场1楼(近南京路) 12345679878</span>
+                    </label>
+                    <a class="del-address" href="javascript:void(0);">[删除]</a>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="address" class="rdo"/>
+                        <span class="mr5 rdo-span">菜菜 天津    天津市 和平区 和平区滨江道300号858商场1楼(近南京路) 12345679878</span>
+                    </label>
+                    <a class="del-address" href="javascript:void(0);">[删除]</a>
+                </li>
+                <li>
+                    <label class="new-address clr-d94">
+                        <input type="radio" name="address"/>
+                        使用新的地址信息
+                    </label>
+                    <div class="invoice-addcnt">
+                        <div class="iadd-title">
+                            收货人信息：
+                        </div>
+                        <div>
+                            <p class="iadd-ip">
+                                姓名：
+                            </p>
+                            <p class="iadd-ip">
+                                <input type="text" class="n-input h22 wp100"/>
+                            </p>
+                            <p class="iadd-ip">
+                                手机号码：
+                            </p>
+                            <p class="iadd-ip">
+                                <input type="text" class="n-input h22 wp100"/>
+                            </p>
+                        </div>
+                         <div class="iadd-title">
+                            地址信息：
+                        </div>
+                        <div>
+                            <p class="iadd-ip">
+                               省份：
+                            </p>
+                            <p class="iadd-ip">
+                                <input type="text" class="n-input h22 wp100"/>
+                            </p>
+                            <p class="iadd-ip">
+                                城市：
+                            </p>
+                            <p class="iadd-ip">
+                                <input type="text" class="n-input h22 wp100"/>
+                            </p>
+                              <p class="iadd-ip">
+                                区县：
+                            </p>
+                            <p class="iadd-ip">
+                                <input type="text" class="n-input h22 wp100"/>
+                            </p>
+                            <p class="iadd-ip">
+                                街道：
+                            </p>
+                            <p class="iadd-ip">
+                                <textarea class="wp100 h40 normal-textarea"></textarea>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="invoice_opeara">
+                    <a href="javascript:void(0);" class="btn-prink save-address">保存地址信息</a>
+                </li>
+            </ul>
+        </div>
+        <div class="buys1-cnt">
+           <h3 class="clearfix">支付方式</h3>
+           <ul class="buys-ycnt">
+                <li class="clearfix buys-yc-type">
+                    <label>
+                        <input type="radio" name="buy-type" class="mr5"/>
+                        在线支付
+                    </label>
+                    <label class="mt5">
+                        <input type="radio" name="buy-type" class="mr5"/>
+                        货到付款
+                    </label>
+                </li>
+           </ul>
+        </div>
+       <div class="buys1-cnt">
+           <h3 class="clearfix">发票信息 <span class="btn-s btn-prink-s buys1-edit-invoice fright">修改</span></h3>
+           <ul class="buys-ycnt buys1-hide-detail">
+                <li class="clearfix">
+                    <span class="key fleft">发票类型：</span>
+                    <div class="value fleft">
+                       普通发票
+                    </div>
+                </li>
+                 <li class="clearfix">
+                    <span class="key fleft">发票抬头：</span>
+                    <div class="value fleft">
+                       个人
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <span class="key fleft">发票内容：</span>
+                    <div class="value fleft">
+                       详细
+                    </div>
+                </li>
+           </ul>
+            <ul class="buys1-hide-list buys-ycnt hide">
+                <li class="current">
+                    <label>
+                        <input type="radio" name="invoice" checked="checked" class="rdo"/>
+                        <span class="mr5 rdo-span">普通发票 个人 明细</span>
+                    </label>
+                    <a class="del-invoice" href="javascript:void(0);">[删除]</a>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="invoice" class="rdo"/>
+                        <span class="mr5 rdo-span">普通发票 个人 明细</span>
+                    </label>
+                    <a class="del-invoice" href="javascript:void(0);">[删除]</a>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="invoice" class="rdo"/>
+                        <span class="mr5 rdo-span">普通发票 个人 明细</span>
+                    </label>
+                    <a class="del-invoice" href="javascript:void(0);">[删除]</a>
+                </li>
+                <li>
+                    <label class="new-invoice clr-d94">
+                        <input type="radio" name="invoice"/>
+                        使用新的发票信息
+                    </label>
+                    <div class="invoice-addcnt">
+                        <div class="iadd-title">
+                            发票类型：
+                        </div>
+                        <p class="iadd-cnt">
+                            <label>
+                                <input type="radio" checked="checked" name="inv-type" class="mr5">普通发票
+                            </label>
+                        </p>
+                        <div class="iadd-title">
+                            发票抬头：
+                        </div>
+                        <div class="iadd-item">
+                            <label>
+                                <input type="radio" checked="checked" name="inv_title_select" class="mr5">
+                                个人
+                            </label>
+                            <label class="mt5">
+                                <input type="radio" name="inv_title_select" class="mr5 inv-tlt-sle">
+                                <span class="mr5">企业</span>
+                                <input type="text" class="input-30 head-invoice">
+                            </label>
+                        </div>
+                        <div class="iadd-title">
+                            发票内容：
+                        </div>
+                        <p class="iadd-cnt">
+                            <select class="select-30">
+                                <option value="化妆品">化妆品</option>
+                                <option value="化妆品">化妆品</option>
+                                <option value="化妆品">化妆品</option>
+                                <option value="化妆品">化妆品</option>
+                            </select>
+                        </p>
+                    </div>
+                </li>
+                <li class="invoice_opeara">
+                    <a href="javascript:void(0);" class="btn-prink save-invoice">保存发票信息</a>
+                    <a href="javascript:void(0);" class="btn-white no-invoice">不需要发票</a>
+                </li>
+            </ul>
+       </div>
+       <div class="buys1-cnt">
+           <h3 class="clearfix">商品清单 <span class="btn-s btn-prink-s fright">返回购物车</span></h3>
+           <ul class="buys-ytable mt10">
+               <li>
+                    <p class="buys-yt-tlt">店铺名称：菜菜家店</p>
+                    <div class="buys1-pdlist">
+                        <div class="clearfix">
+                            <a class="img-wp" href="javascript:void(0);">
+                                <img src="../../upload/pd-4.png"/>
+                            </a>
+                            <div class="buys1-pdlcnt">
+                                <p>
+                                    <a class="buys1-pdlc-name" href="javascript:void(0);">坚果炒货特产野生开口松子原味</a>
+                                </p>
+                                <p>
+                                    单价(元)：￥50
+                                </p>
+                                <p>
+                                    数量：1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buys1-pdlist bd-t-de">
+                        <div class="clearfix">
+                            <a class="img-wp" href="javascript:void(0);">
+                                <img src="../../upload/pd-4.png"/>
+                            </a>
+                            <div class="buys1-pdlcnt">
+                                <p>
+                                    <a class="buys1-pdlc-name" href="javascript:void(0);">坚果炒货特产野生开口松子原味</a>
+                                </p>
+                                <p>
+                                    单价(元)：￥50
+                                </p>
+                                <p>
+                                    数量：1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leave-message">
+                        <p>备注：</p>
+                        <textarea class="normal-textarea h40 wp100 mt10"></textarea>
+                    </div>
+                    <div class="shop-total">
+                        <p>运费：￥0.00</p>
+                        <p class="clr-c07">本店合计：￥100.00</p>
+                    </div>
+               </li>
+               <li class="bd-t-cc">
+                    <p class="buys-yt-tlt">店铺名称：菜菜另外一家店</p>
+                    <div class="buys1-pdlist">
+                        <div class="clearfix">
+                            <a class="img-wp" href="javascript:void(0);">
+                                <img src="../../upload/pd-4.png"/>
+                            </a>
+                            <div class="buys1-pdlcnt">
+                                <p>
+                                    <a class="buys1-pdlc-name" href="javascript:void(0);">坚果炒货特产野生开口松子原味</a>
+                                </p>
+                                <p>
+                                    单价(元)：￥50
+                                </p>
+                                <p>
+                                    数量：1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buys1-pdlist bd-t-de">
+                        <div class="clearfix">
+                            <a class="img-wp" href="javascript:void(0);">
+                                <img src="../../upload/pd-4.png"/>
+                            </a>
+                            <div class="buys1-pdlcnt">
+                                <p>
+                                    <a class="buys1-pdlc-name" href="javascript:void(0);">坚果炒货特产野生开口松子原味</a>
+                                </p>
+                                <p>
+                                    单价(元)：￥50
+                                </p>
+                                <p>
+                                    数量：1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leave-message">
+                        <p>备注：</p>
+                        <textarea class="normal-textarea h40 wp100 mt10"></textarea>
+                    </div>
+                    <div class="shop-total">
+                        <p>运费：￥0.00</p>
+                        <p class="clr-c07">本店合计：￥100.00</p>
+                    </div>
+               </li>
+               <li class="bd-t-cc">
+                   <div class="buys-order-total">
+                       订单总金额：￥200.00
+                   </div>
+               </li>
+               <li>
+                   <a href="javascript:void(0);" class="post-order">提交订单</a>
+               </li>
+           </ul>
+       </div>
+    </div>
+    <div id="footer"></div>
+    <script type="text/javascript" src="../../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../../js/template.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/tmpl/common-top.js"></script>
+    <script type="text/javascript" src="../../js/tmpl/footer.js"></script>
+    <script type="text/javascript" src="../../js/tmpl/buy_step1.js"></script>
+</body>
+</html>
+</body>
+</html>

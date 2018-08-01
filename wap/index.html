@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body id="home-320">
+	<header>
+		<div class="header-wrap">
+			<div class="htsearch-wrap">
+				<input type="text" class="htsearch-input clr-999" value="" id="keyword" placeholder="搜索ShopNC商品"/>
+				<a href="javascript:void(0);" class="search-btn"></a>
+			</div>
+		</div>
+	</header>
+	<div id="home-cnt-wp"></div>
+	<div id="footer"></div>
+</body>
+<script type="text/html" id="home_body">
+	<div id='mySwipe'class='swiper-container'>
+		<div class='swipe-wrap'>
+		  <%for(i=0;i<adv_list.length;i++){%>	
+		  <a class="swipe-item home1" href="javascript:void(0);" keyword="<%=adv_list[i].keyword %>"><img src="<%=adv_list[i].image%>"></a>
+		  <%}%>
+		</div>
+		<div class="swipe-paginat"></div>	
+	</div>
+	
+	<div class="home-nav clearfix">
+		<a href="javascript:void(0);" class="bg-1">
+			<span class="hnav-home"></span>
+			<p>首页</p>
+		</a>
+		<a href="<%=WapSiteUrl%>/tmpl/product_first_categroy.html" class="bg-2">
+			<span  class="hnav-category"></span>
+			<p>分类</p>
+		</a>
+		<a href="<%=WapSiteUrl%>/tmpl/cart_list.html" class="bg-3">
+			<span class="hnav-cart"></span>
+			<p>购物车</p>
+		</a>
+		<a href="<%=WapSiteUrl%>/tmpl/member/member.html?act=member" class="bg-4">
+			<span class="hnav-mine"></span>
+			<p>我的商城</p>
+		</a>
+	</div>
+	<%for(i=0;i<home1.length;i++){%>
+	<div class="home-categroy clearfix" >
+		<a href="javascript:void(0);" class="item_img <%if(i==1){%>fright<%}else{%>fleft<%}%> home1" keyword="<%=home1[i].keyword %>">
+			<img src="<%=home1[i].image%>">
+		</a>
+		<div class="hcate-content clearfix">
+			<a href="javascript:void(0);" class="hcate-cnt-tlt home1" keyword="<%=home1[i].keyword %>">
+				<span><%=home1[i].title%></span>
+			</a>
+			<div class="hcate-cnt-cate clearfix">
+				<% if(home1[i].keyword1!=null){%>
+				<% arr=(home1[i].keyword1).split(",");%>
+				<%for(j=0;j<arr.length;j++){%>
+				<a href="javascript:void(0);" keyword="<%=arr[j]%>" class="home1" ><%=arr[j]%></a>
+				<%}%>
+				<%}%>
+			</div>
+		</div>
+	</div>
+	<%}%>
+	<table class="home-cnt home-hot clearfix">
+		<%
+			for (var i = 0;i<homeMap.length;i++){
+		%>
+		<tr>
+			<%for (var j=0;j<homeMap[i].length;j++){
+				if(homeMap[i][j]){
+			%>
+				<td>
+					<a href="javascript:void(0);" class="hhot-item clearfix home2" keyword="<%=homeMap[i][j].keyword%>">
+						<img src="<%=homeMap[i][j].image%>"/>
+						<span class="hhot-name"><%=homeMap[i][j].title%></span>
+						<br/>
+						<span class="hhot-info">
+						<% var arr = (homeMap[i][j].desc).split(",")%>
+				            <%for(var k=0;k<arr.length;k++){%>
+				            <%if(k>1)break;%>
+				            <%=arr[k]%><br/>
+			            <%}%>
+            			</span>
+					</a>
+				</td>
+			<%}}%>
+		</tr>
+		<%}%>
+	</table>
+</script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/tmpl/footer.js"></script>
+</html>
