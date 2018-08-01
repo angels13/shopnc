@@ -1,0 +1,179 @@
+/* ============== */
+/* 店铺模板苹果风格 */
+/* @kivenhan      */
+/* www.shopnc.net */
+/* Apr-14-2012    */
+/* ============== */
+
+
+body { font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif; background: #F6F6F8 url(images/body_bg.jpg) repeat-x scroll 50% 0;}
+a { color: #333; }
+a:hover { text-decoration: none; color: #0085CF;}
+input[type="text"] { border-radius: 10px;}
+
+
+/* (nc-s-c-s) full name -> ShopNC Store Container Style */
+.nc-s-c-s1 {}
+.nc-s-c-s1 .title { background: url(images/repeat_x.png) repeat-x scroll center top; height: 24px; border-radius: 5px 5px 0 0;}
+.nc-s-c-s1 .title h4 { color:#FFF; line-height: 22px; margin: 0 0 0 16px; display: inline-block; text-shadow: 0 1px 1px rgba(0,0,0,.2);}
+.nc-s-c-s1 .title h4 { *display: inline;}
+.nc-s-c-s1 .title span {}
+.nc-s-c-s1 .content { background:#FFF; border: solid #CDCDCD 1px; border-radius: 0 0 5px 5px; *padding-bottom:10px;}
+
+.nc-s-c-s2 {}
+.nc-s-c-s2 .title { background: url(images/repeat_x.png) repeat-x scroll center -24px; height: 24px; border-radius: 5px 5px 0 0;}
+.nc-s-c-s2 .title h4 { color:#FFF; line-height: 22px; margin: 0 0 0 16px; display: inline-block; text-shadow: 0 1px 1px rgba(0,0,0,.2);}
+.nc-s-c-s2 .title h4 { *display: inline;}
+.nc-s-c-s2 .title span {}
+.nc-s-c-s2 .content { background:#FFF; border: solid #CDCDCD 1px; border-radius: 0 0 5px 5px;}
+
+.nc-s-c-s3 {}
+.nc-s-c-s3 .title { font-family: "microsoft yahei"; background: #EEE; border: solid #CDCDCD; border-width: 1px 1px 0 1px; border-radius: 5px 5px 0 0; padding: 24px 16px 6px 16px;}
+.nc-s-c-s3 .title h4 { font-weight: normal; font-size: 18px; line-height: 22px; color: #333; display: inline-block;  width:50%}
+.nc-s-c-s2 .title h4 { *display: inline;}
+.nc-s-c-s3 .title span {  font-size: 12px; display: inline-block; float:right; line-height: 16px; color: #777;}
+.nc-s-c-s3 .title span { *display: inline;}
+.nc-s-c-s3 .content { clear:both; background-color: #FFF; border: solid #CDCDCD 1px; border-radius: 0 0 5px 5px; overflow:hidden;}
+
+.nc-s-c-s4 {}
+.nc-s-c-s4 .title { border: solid #CDCDCD; border-width: 1px 1px 0px 1px; border-radius: 5px 5px 0 0; background: #FFF none; padding: 20px 0 6px 0;}
+.nc-s-c-s4 .title h4 { font-size: 14px; color: #555; display: block; text-shadow: none; margin: 4px 0 4px 16px;}
+.nc-s-c-s4 .content { background-color: #FFF; border: solid #CDCDCD; border-width: 0 1px 1px 1px; border-radius: 0 0 5px 5px; padding: 10px 0 10px 0; overflow: hidden; margin-bottom: 20px;}
+
+
+/* ========= */
+/* 独立类样式 */
+/* ========= */
+
+/* 列表翻页 */
+.pagination{ padding: 2px; margin-right: 16px;}
+.pagination ul li span{ line-height: 20px; color: #CCC; list-style-type: none; background-color: #FFF; padding: 5px 10px; margin: 0px 2px; border: solid 1px #F7F7F7; border-radius: 5px;}
+.pagination ul li a span , .pagination ul li a:visited span{ color: #777; border-color: #F7F7F7;}
+.pagination ul li a:hover span, .pagination li a:active span{ color: #000; background-color: #F7F7F7; padding: 6px 11px; border: none;}
+.pagination ul li span.currentpage{ color:#FFF; font-weight: bold; background-color: #3A557D; padding: 6px 11px; border: none;}
+
+
+/* ============================== */
+/* 头部店铺介绍与搜索 -> header.php */
+/* ============================== */
+
+
+/* 导航区域布局控制 */
+.ncsl-nav { background: url(images/top_bg.jpg) no-repeat center 8px; text-align: center; width: 100%; height: 370px; position: relative; z-index: 1;}
+
+
+/* 导航上部图片控制 */
+.ncsl-nav .banner a.img { width: 1000px; margin: 0 auto;}
+.ncs-default-banner { background: url(images/header.png) no-repeat scroll 50% 0; display: block; width: 100%; height: 306px; position:absolute; z-index: 2; top: 0; left:0;}
+
+
+/* 店铺导航 */
+#nav { background: url(images/nav_bg.png) no-repeat scroll 50% 0; width: 100%; height: 42px; position: absolute; z-index:3; left:0; top:322px;}
+#nav ul { white-space: nowrap; display: block; width: 940px; height: 36px; padding-left:60px; margin: 2px auto 4px auto; overflow: hidden;}
+#nav li { float: left;}
+#nav li a span { font-family: "microsoft yahei"; font-weight: 600; line-height: 20px; color: #FFF; text-overflow: ellipsis; white-space: nowrap; max-width:160px; height: 20px; padding: 8px 30px 8px 10px; margin-left: 20px; margin-right:-1px; overflow: hidden; text-shadow: 0 -1px 1px rgba(0,0,0,0.5);}
+#nav li a, #nav li a span { background: url(images/nav_btn.png) scroll no-repeat; float: left; cursor:pointer; }
+#nav li.normal a { background-position: 0% 0px; height: 36px;}
+#nav li.normal a span { background-position: 100% -36px; }
+#nav li.normal a:hover { background-position: 0% -72px;}
+#nav li.normal a:hover span { background-position: 100% -108px;}
+#nav li.active a, #nav li.active a:hover { background-position: 0% -144px; height: 36px;}
+#nav li.active a span, #nav li.active a:hover span { background-position: 100% -180px; }
+
+/* ====================== */
+/* 左侧边栏样式 -> left.php */
+/* ====================== */
+
+
+/* 侧边栏搜索 */
+.ncs-search a { font-size: 11px; color:#FFF; line-height:16px; background: url(images/repeat_x.png) repeat-x center -48px; border: solid 1px #015A9A; text-decoration:none; padding:2px 8px; border-radius: 10px; text-shadow: 0 0 0;}
+.ncs-search a:hover { background-position: 50% -72px; border-color: #07428F;}
+
+
+/* 侧边栏排行榜 */
+
+.ncs-top-panel li { border-bottom: solid 1px #E7E7E7;}
+.ncs-top-panel dd.goods-pic a { border: solid 1px #FFF;}
+.ncs-top-panel li:hover dd.goods-pic a { border-color: #FFF; box-shadow: 1px 1px 1px rgba(0,0,0,0.2)}
+.ncs-top-panel dd.goods-pic p { border: solid 1px #CCC;}
+.ncs-top-panel dd.goods-pic p big { border-color: transparent #CCC transparent transparent;}
+.ncs-top-panel dd.goods-pic p small { border-color: transparent #FFFFFF transparent transparent;}
+
+
+/* 侧边栏店铺分类控制标签 */
+.ico-none, .ico-block, .ico-sub { background-color: #A3A9B4; border:0;}
+.ico-none, .ico-block { width: 14px; height:14px; border-radius: 7px; }
+.ico-none em, .ico-block em { font-size: 0px; line-height: 0; width: 0px; height: 0px; border: 4px solid; display: block;}
+.ico-none em { margin: 3px 0 0 6px; border-color: transparent transparent transparent #FFF;}
+.ico-block em { margin: 5px 0 0 3px; border-color: #FFF transparent transparent transparent;}
+.ico-sub { width: 2px; height:2px; margin: 10px 6px 0 0; border-radius: 1px;}
+.ncs-class-bar .content { background:#FFF url(images/content_bg.gif) repeat-x scroll 0px 0px; box-shadow: 1px 1px 0 #FFF inset;}
+
+
+/* ========================================= */
+/* 商品列表类页面 -> index.php, goods_list.php */
+/* ========================================= */
+
+
+/* 焦点图轮换 */ 
+.flex-control-nav li a { width: 6px ; height: 6px ; line-height: 6px; background-color: #FFF; border: solid 2px #CCC; text-indent: -9999px;}
+.flex-control-nav li a:hover { width: 10px ; height: 10px ; line-height: 10px; background-color: #1F95DF; border: none;}
+.flex-control-nav li a.flex-active { width: 10px ; height: 10px ; line-height: 10px; background-color: #3A557D; border: none; box-shadow: none;}
+
+/* ================
+ * 商品详情购买页面
+ * ================ */
+/* 举报中心 */
+.nc-inform { margin-right: 10px;}
+/* 商品简介 */
+.nc-detail { background-color: #FFF; margin: 5px 0 15px 0; border-radius: 5px; box-shadow: 0 -2px 2px rgba(0,0,0,0.1);}
+.nc-gallery { width: 312px; float:left; margin-left:10px; _margin-left:5px/* IE6 */;}
+.nc-wrap { width: 450px; float:left; margin-left:10px; _margin-left:5px/* IE6 */;}
+.ncg-info { float: right; margin-right:10px; _margin-right:5px/* IE6 */;}
+
+
+/* 商品内容处TabBar */
+.tabbar { height:42px;}
+.tabbar ul { background: #F6F6F8 url(images/repeat_x.png) repeat-x 0px -222px; height:42px; border: none;}
+.tabbar ul li { float:left;}
+.tabbar ul li a { font-size: 14px; font-weight:600; color:#FFF; background: url(images/repeat_x.png) repeat-x 0px -180px; line-height: 20px ; float:left; border: solid #43505F; border-width: 1px 1px 0 1px ; padding: 10px 48px!important; margin-right: -1px !important; border-radius: 8px 8px 0 0; text-decoration:none; text-shadow: 1px 1px 1px rgba(0,0,0,.5);}
+.tabbar ul li a:hover { background-position: 0% -138px;}
+.tabbar ul li.current a { color:#555; background-color: #FFF; background-position: 0px -96px ; padding-bottom:11px ; margin-left: 0; border-color: #CCC ; border-width: 1px 1px 0 1px ; text-shadow: none;}
+
+
+/* 商品详情内容 */
+.ncg-intro .default {width: 768px;}
+
+/* 商品属性值*/
+.nc-goods-sort { background-color: #FFF; border: solid #E7E7E7; border-width: 0 0 1px 0; padding:15px 0; width: 100%; }
+
+
+
+.ncs-submenu { width:170px; margin: 5px 13px 5px 15px; _margin: 5px 6px 5px 8px; _display: inline-block; _float:left;}
+.ncs-submenu li { line-height: 20px; font-weight: 600; text-align:left; margin: 6px 0; }
+.ncs-submenu li a { color: #333; }
+.ncs-submenu li ul { width: 150 ; margin: 5px 0px 5px 20px; }
+.ncs-submenu li ul li { line-height: 20px; font-weight: normal; text-align:left; margin: 4px 0; }
+
+
+
+/* 商品列表 */
+.ncg-list{ margin-bottom: 20px;}
+.ncg-list .content ul { width:789; margin: -1px 0 0 -1px; padding-bottom: 20px;  margin-top:-20px !important;}
+.ncg-list .content ul li { width: 262px; height: 120px; border: solid 1px #E7E7E7; border-bottom-width: 0; display: inline-block; float: left; padding: 20px 0; margin-bottom: 0px; margin-bottom: -1px; margin-right: -1px;}
+.ncg-list .content ul li dl { font-family: "microsoft yahei"; width: 140px; height:120px; margin: 0; padding-top:0; padding-left: 110px; position: relative; display: block; line-height: 16px; text-align: left;}
+.ncg-list .content ul li dd.ncg-pic { width: 80px; height: 80px; padding: 0 15px; margin: 0; position: absolute; top: 0px; left: 0px; border:0;}
+.ncg-list .content ul li dd.ncg-pic .thumb { width: 80px; height: 80px;}
+.ncg-list .content ul li dd.ncg-pic img { width: 80px; height: 80px; }
+.ncg-list .content ul li dt { font-weight: 600; height: 32px; width: 140px; overflow: hidden; margin: 8px 0;}
+.ncg-list .content ul li dd { margin: 4px 0; top: 0px; left: 0px;}
+.ncg-list .content ul li dd.ncg-sold { font-size: 11px; color: #999; position: absolute; z-index: 1; top: 36px; *top: 48px; left: 110px;}
+.ncg-list .content ul li dd.ncg-price { position: absolute; z-index: 1; top: 60px;  *top: 72px; left: 110px;}
+.ncg-list .content ul li dd .price { font-family:Arial, Helvetica, sans-serif; color: #333;}
+.ncs-goodslist-bar { background: #FEFEFE; width: 788px; border: solid #CDCDCD; border-width: 1px 1px 0 1px; margin: 0; height: 32px;}
+
+
+
+
+
+

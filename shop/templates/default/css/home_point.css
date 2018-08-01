@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* ================================ */
+/* 积分商城页面独立样式定义 				*/
+/* Author:			Hulihutu		*/
+/* Copyright:		www.shopnc.net	*/
+/* Create Date:		Aug-10-2012		*/
+/* Retrofit Date:	Oct-15-2012		*/
+/* ================================ */
+
+.wrapper { width: 1000px;}
+.head-search-bar { width: 400px;}
+.nc-layout-all { width: 1000px; margin: 10px auto; overflow: hidden;}
+.nc-layout-left { width: 210px; float:left;}
+.nc-layout-right { width: 780px; float:right;}
+
+.nc-user-info, .nc-voucher-info { background: #F4EADF;}
+.nc-user-info dl { padding: 10px; overflow:hidden;}
+.nc-user-info dl dt { width: 60px; height: 60px; float: left;}
+.nc-user-info dl dd { line-height: 20px; white-space: nowrap; width: 120px; height: 20px; float: right;}
+.nc-user-info ul { padding: 0 10px 10px 10px; overflow: hidden;}
+.nc-user-info ul li { line-height: 24px;}
+.nc-user-info dl dd.user-login { color:#9B7C5E;}
+.nc-user-info dl dd.user-login-btn { font-size: 14px; font-weight: 600; color: #FFF; background-color: #B69E86; text-align:center; display:block; width:100px; padding: 5px 0; margin: 10px 20px 0 0; border-radius: 4px;}
+.nc-user-info dl dd.user-login-btn a { color: #FFF;}
+
+.nc-voucher-info dl {}
+.nc-voucher-info dl dt { background-color: #B69E86; padding: 20px 10px; overflow:hidden; zoom:1;}
+.nc-voucher-info dl dt h3 { width: 36px; height: 36px; padding: 6px; margin-left:4px; border-radius: 24px; font-size: 14px; font-weight: 600; background: #FFF; color:#9B7C5E; line-height: 18px; text-align: center; float:left}
+.nc-voucher-info dl dt span { color: #FFF; font-weight: 600; float:left; line-height: 16px; padding:8px 12px;}
+.nc-voucher-info li { line-height: 24px; padding:6px 20px; font-weight: 600; border-bottom: solid 1px #EBD9C5; box-shadow: 0 1px 0 rgba(255,255,255,0.2)}
+
+.nc-exchange-info { background: #DEE6D8; overflow:hidden;}
+.nc-exchange-info dl {}
+.nc-exchange-info dl dt { background-color: #7A9B64; padding: 20px 10px; overflow:hidden; zoom:1;}
+.nc-exchange-info .title { background-color: #7A9B64; height: 40px; overflow:hidden; color:#FFF; line-height: 40px; padding-left: 10px; font-weight:600;}
+.nc-exchange-info dl dt h3 { width: 36px; height: 36px; padding: 6px; margin-left:4px; border-radius: 24px; font-size: 14px; font-weight: 600; background: #FFF; color:#627C50; line-height: 18px; text-align: center; float:left; }
+.nc-exchange-info dl dt span { color: #FFF; font-weight: 600; float:left; line-height: 16px; padding:8px 12px;}
+.nc-exchange-info dl dd h4 { background:#EFF3EC; color: #333; line-height: 40px; padding-left:10px; width:200px; font-weight: 600; margin-bottom:20px; }
+.nc-exchange-info dl dd ul li { padding-bottom:20px;}
+
+.nc-voucher-list, .nc-exchange-list { clear:both; overflow:hidden;  margin-bottom:10px;}
+.nc-voucher-list .title, .nc-exchange-list .title { height: 28px; border-bottom: solid  4px; margin-top:8px;  position: relative; z-index:1;}
+.nc-voucher-list .title h3, .nc-exchange-list .title h3 { height: 36px; color: #FFF; border-radius: 5px 5px 0 0; width:120px; position: absolute; z-index: 1; top:-8px; left:10px; line-height: 36px; text-align:center; font-size: 14px; font-weight: 600;}
+.nc-voucher-list .title span, .nc-exchange-list .title span { line-height: 28px; margin-right:10px; float: right; }
+.nc-voucher-list .title { background: #F4EADF; border-color: #B69E86;}
+.nc-voucher-list .title h3 { background : #B69E86; }
+.nc-exchange-list .title { background: #DEE6D8; border-color: #7A9B64;}
+.nc-exchange-list .title h3 { background : #7A9B64; }
+
+.nc-voucher-list ul, .nc-exchange-list ul { }
+.nc-voucher-list ul li, .nc-exchange-list ul li { float: left; width: 195px; padding: 20px 0;}
+.nc-voucher-list .voucher-pic { position: relative; z-index: 1; width: 160px; height: 160px; margin: 0 auto; border: solid 1px #DACEC2; cursor: pointer;}
+.nc-voucher-list .voucher-pic dl { position: absolute; z-index: 1; width: 160px; height: 40px; left:0; bottom:0;}
+.nc-voucher-list .voucher-pic dl dt { font-size: 14px; line-height: 40px; filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#E5B69E86', endColorstr='#E5B69E86');background:rgba(182,158,134,0.9); color: #FFF; width:60px; text-align:center; font-weight: 600; height: 40px; float:left;}
+.nc-voucher-list .voucher-pic dl dd { line-height: 40px;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#E5B69E86', endColorstr='#E5B69E86');background:rgba(182,158,134,0.9); color: #FFF; width: 100px; font-weight: 600; height: 40px; float:left; text-align:center;}
+.nc-voucher-list .voucher-pic dl dd em { line-height: 40px; font-size: 14px; font-weight: 600;}
+.nc-voucher-list .voucher-store { width:162px;  margin: 5px auto;}
+.nc-voucher-list .voucher-store p { line-height: 20px; text-align: center; }
+.nc-voucher-list .voucher-store p.logo { font-family: "microsoft yahei"; font-size: 18px; font-weight: 600; width:160px; height:48px; border: solid 1px #F4EADF;}
+
+.nc-exchange-gift { width: 162px; padding: 162px 0 0 0; overflow: hidden; margin: 0 auto; position: relative; z-index: 1;}
+.nc-exchange-gift .gift-name { line-height: 24px; background-color: transparent; text-overflow: ellipsis; white-space: nowrap; width: 100%; height: 24px !important; padding: 0; overflow: hidden;}
+.nc-exchange-gift .gift-pic { white-space: nowrap; width: 100%; height: 160px; position: absolute; z-index: 1; left: 0; top: 0;}
+.nc-exchange-gift .gift-price { line-height: 20px; width: 100%; color: #999;  text-align: center; margin-top: 5px; margin-bottom:5px;}
+.nc-exchange-gift .gift-price em { text-decoration: line-through;}
+.nc-exchange-gift .gift-pointpord { line-height: 20px; background:#7A9B64; width: 80%; margin: 0 auto; height: 20px; color: #FFF; display:block; border-radius: 10px; text-align: center; }
+
+
+.giftWare { background-color: #FFF; width: 770px; float: left; border: solid 5px #DEE6D8;}
+.giftWare .title, .wareIntro .userMenu { background: #DEE6D8; width:770px; height: 40px;}
+.giftWare .title h2 { font-size: 16px; font-weight: 600; line-height: 40px; color:#333;}
+.giftWare .picFloat { display: inline; width: 300px; height: 300px; float: left; margin: 10px;}
+.giftWare .picFloat .pic { width: 300px; height: 300px;}
+.giftWare .wareText { float: right; display: inline; width: 420px; margin: 10px 20px 10px 0px; position: relative; z-index: 10;}
+.giftWare .wareText .hr { font-size: 0px; line-height: 0px; width: 100%; height: 0px; clear: both; border-top: 1px dotted #CCC;}
+.giftWare .wareText h3 { font-size: 14px; font-weight: 600; color: #333; line-height: 32px; height: 32px;}
+.giftWare .wareText h3 span{ font-size:16px; color:#F60;}
+.giftWare .wareText h4 { font-size: 12px; font-weight: normal; color: #555; line-height: 20px; display: block; height: 20px; margin: 8px 10px 8px 0px; float: left; padding-right: 10px; border-right: 1px solid #E7E7E7;}
+.giftWare .wareText h4 span { color: #333; font-weight: 600;}
+.giftWare .wareIntro { width: 770px; margin: 0 auto;}
+.wareIntro .userMenu li { background: #FFF; height: 32px; float: left; padding-left: 4px;font-size: 12px; font-weight: 600; line-height: 32px; color: #333; border-radius: 5px 5px 0 0; margin: 8px 0 0 0; padding:0 20px;}
+.wareIntro .con { font-size: 12px; line-height: 22px; color: #555; width: 740px; margin: 15px auto; overflow:hidden;}
+
+.wareText .exchange  { background-color: #EFF3EC; width: 400px; float: left; padding: 8px; margin-top: 12px; margin-bottom: 12px; border: 1px solid #DEE6D8;}
+.wareText .exchange h6 { font-size: 12px; font-weight: normal; line-height: 20px; color: #555; width: 100%; float: left; clear: both;padding-bottom: 8px;}
+.wareText .exchange span { font-family:"microsoft yahei"; font-size: 20px; font-weight:600; line-height: 38px; color:#FFF; background: #7A9B64; display: block; width: 150px; height: 40px; float: left; clear: both; border: solid 1px #698756; border-radius: 5px; overflow: hidden; }
+.wareText .exchange span i.ico { background: url(../images/gift.png) no-repeat scroll 0px 0px; display: inline-block; width: 26px; height: 26px; margin: auto 10px; vertical-align: middle;}
+.wareText .exchange span.btn-off { filter: alpha(opacity=50); -moz-opacity: 0.5; -khtml-opacity: 0.5; opacity: 0.5; cursor: default;}
+.wareText .exchange span.btn-on { cursor: pointer;}
+.wareText .exchange h5 { font-size: 12px; font-weight: normal; line-height: 20px; color: #555; height: 20px; float: left; padding-top: 20px; padding-left: 16px;}
+
+
+.wareText dl { padding-top: 10px; }
+.wareText dl dt { font-size: 12px; line-height: 24px; color: #555;}
+.wareText dl dd { display: block; height: 24px;}
+.wareText .copyUrl .url { font-family: Tahoma, Geneva, sans-serif; font-size: 12px; line-height: 20px; color: #999; width: 300px; height: 20px;}
+.wareText .copyUrl .copyBtn { font-size: 12px; line-height: 24px; color: #333; background: url(../images/btn.gif) no-repeat left -300px; text-align: center; display: inline; width: 80px; height: 24px; margin-left: 4px; border: 0px; cursor:pointer;}
+.wareText dl dd .share li { display: block; width: 16px; height: 16px; float: left; padding: 4px;}
+.wareText dl dd .share { display: block; height: 24px; float: left;}
+
+
+.exchangeNote { width: 200px; margin: 0; overflow:hidden; padding:5px;}
+.exchangeNote li { background:#EFF3EC; display: block; width: 190px; float: left; clear: both; padding: 5px; margin: 0; }
+.exchangeNote li .picFloat { width: 64px; height: 64px; float: left;}
+.exchangeNote li .pic { width: 64px; height: 64px;}
+.exchangeNote li .info { display: block; width: 110px; height: 64px; float: right;}
+.exchangeNote li .info .us er { font-size: 12px; line-height: 24px; color: #06C; overflow: hidden;}
+.exchangeNote li .info .name { font-size: 12px; line-height: 20px; color: #555; width: 110px; height: 40px; overflow: hidden;}
+
+
+.pagination { clear:both;}
+
+.voucherinfo { padding: 15px;}
+.voucherinfo dl { line-height: 20px; height: 20px; clear: both; margin: 10px 0px; overflow: hidden;}
+.voucherinfo dt { text-align: right; display: inline-block; width: 25%; float: left;}
+.voucherinfo dd { display: inline-block; width: 74%;}
+.voucherinfo .enter { width: 100%; margin: 10px auto; overflow: hidden;}
+.voucherinfo .enter .submit { font-size: 14px; font-weight: 600; line-height: 32px; color: #FFF; background: #FE8502 none repeat scroll 0 0; display: inline-block; height: 32px; padding: 0 12px; margin-left: 10%; border: 1px solid #FF6633; border-radius: 5px 5px 5px 5px; overflow:hidden; cursor: pointer; }
+.voucherinfo .enter .submit:hover { background: #F60 ; text-decoration: none;}
+
+.voucherinfo .errormsg { width: 100%; height: 50px; padding: 20px;}
+
+.norecord { font-size: 14px; line-height:24px; color:#999; text-align:center; width: 200px; height:24px; margin: 50px auto;}
+
+
+
